@@ -141,4 +141,4 @@ A common drawback of CQRS is eventual consistency whereby in order to confirm th
 
 ## Conclusion
 
-Given the advantages of CQRS + ES and its drawbacks, the real benefits comes from knowing when to use it and how to use it. 
+Given the advantages of CQRS + ES and its drawbacks, the real benefits comes from knowing when to use it and how to use it. If your domain has no need for model reporting and your infrastructure has no desire for eventual consistency then CQRS + ES isn't worth the overhead. Although if you can see how your domain would benefit from a guarantee of the application state, how real-time auditing could enhance your business logic and how your infrastructure could thrive with optimized read times from your data store then CQRS + Event Sourcing would be a strong contender for your project. 
