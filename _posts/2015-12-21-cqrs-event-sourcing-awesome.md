@@ -20,7 +20,7 @@ public void SetHousePriceCommand()
 
 And a query is a method that simply returns a value:
 
-```cs
+```
 public int GetHouseCountQuery()
 {
     int houseCount = // logic to retrieve house count... 
