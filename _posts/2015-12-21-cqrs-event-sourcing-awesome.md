@@ -11,7 +11,7 @@ The Command Query Responsibility Segregation (CQRS) pattern is based on the Comm
 
 A command in this context is a method that performs an action and does not return a value:
 
-```cs
+```
 public void SetHousePriceCommand()
 {
     // logic to set house price...    
@@ -31,7 +31,7 @@ public int GetHouseCountQuery()
 
 CQRS expands on CQS by ensuring that the model that updates data is different to the model that returns the data, in effect having a command model and query model. As opposed to a CRUD application where by the model to update an entity could be the same as the model that is retrieved to view an entity:
 
-```cs
+```
 public class HouseModel
 {
     public int Id { get; set; }
@@ -45,7 +45,7 @@ If we go ahead and apply CQRS to our CRUD app we would segregate our house model
 
 So given a scenario where we want to update a house price, we could have a Update House Price Command Model that is sent to our House repository:
 
-```cs
+```
 public class UpdateHousePriceCommand
 {
     public int HouseId { get; set; }
@@ -55,7 +55,7 @@ public class UpdateHousePriceCommand
 
 And a House Query Model that is returned from our repository:
 
-```cs
+```
 public class GetAllHouseInfoQuery
 {
     public int HouseId { get; set; }
