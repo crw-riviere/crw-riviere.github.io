@@ -1,5 +1,5 @@
 ---
-title: Why use Strongly Typed Id's?
+title: Why use Strongly Typed Id's
 updated: 2016-01-20 22:16
 ---
 
