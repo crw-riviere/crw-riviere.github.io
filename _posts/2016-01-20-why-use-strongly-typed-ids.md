@@ -43,7 +43,9 @@ public void SetAgent(Agent newAgent)
 }
 ```
 
-Following this refactoring task we have accidently assigned the Address Id to our Agent Id and seeing as all our identifiers are integers the compiler is more than happy to let this build and the runtime is also more than happy to let this pass at execution. All it takes is a one call to our SetAgent() method and we have a corrupted application state as our Appartment aggregate has the wrong Agent assigned to it. If we were lucky then the Address Id that we assigned would not correlate to any Agent Id within our domain and we would receive a NullReferenceException, if we were not so lucky this issue would go by unnoticed for a while making our domain more corrupt. 
+Following this refactoring task we have accidently assigned the Address Id to our Agent Id and seeing as all our identifiers are integers the compiler is more than happy to let this build and the runtime is also more than happy to let this pass at execution. 
+
+All it takes is a one call to our SetAgent() method and we have a corrupted application state as our Appartment aggregate has the wrong Agent assigned to it. If we were lucky then the Address Id that we assigned would not correlate to any Agent Id within our domain and we would receive a NullReferenceException, if we were not so lucky this issue would go by unnoticed for a while making our domain more corrupt. 
 
 ## The Answer
 
