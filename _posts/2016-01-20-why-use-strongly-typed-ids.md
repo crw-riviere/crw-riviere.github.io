@@ -68,7 +68,7 @@ public class AgentId
 }    
 ```
 
-Now instead of passing around our identifiers, we pass around our strongly typed identifiers which prevents the nightmare of mistakenly assigning identifiers to the wrong entity.
+Now instead of passing around our identifiers, we pass around our strongly typed identifiers which helps prevents the nightmare of mistakenly assigning identifiers to the wrong entity.
 
 ```
 public class Apartment : AggregateRoot
