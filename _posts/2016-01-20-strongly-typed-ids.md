@@ -1,5 +1,5 @@
 ---
-title: Why use Strongly Typed Id's
+title: Strongly identifying with Strongly Typed Id’s
 updated: 2016-01-20 22:16
 ---
 
@@ -11,7 +11,7 @@ Within the lifespan of an aggregate multiple identifiers could be created, moved
 
 Take for example our Apartment aggregate and simple example:
 
-```
+```cs
 public class Apartment : AggregateRoot
 {
     public int Id { get; set; }
@@ -24,7 +24,7 @@ public class Apartment : AggregateRoot
 
 Our Apartment model has 3 commonly named identifier properties each represented via a 32 bit integer. The Apartment aggregate exists in a property real estate domain whereby an apartment can have its agent changed multiple times throughout the its timeline. And the method for this action looks like the following:
 
-```
+```cs
 public void SetAgent(Agent newAgent)
 {
     this.AgentId = newAgent.Id;
@@ -34,7 +34,7 @@ public void SetAgent(Agent newAgent)
 
 Given the weakly typed nature of our identifiers it would not be far fetched for our SetAgent() method to be incorrectly refactored (be it due to unfamiliarity of the task, domain, language or just human error) into the following:
 
-```
+```cs
 public void SetAgent(Agent newAgent)
 {
     // this.AgentId = newAgent.Id;
@@ -51,7 +51,7 @@ All it takes is a one call to our SetAgent() method and we have a corrupted appl
 
 This could've all been prevented if we had used the power of our favourite statically typed language and created Strongly Typed Id’s. All a strongly typed Id is, is an identifier encapsulated in the type of our entity:
 
-```
+```cs
 public class AgentId
 {
     private readonly int id;
@@ -70,7 +70,7 @@ public class AgentId
 
 Now instead of passing around our identifiers, we pass around our strongly typed identifiers which helps prevents the nightmare of mistakenly assigning identifiers to the wrong entity.
 
-```
+```cs
 public class Apartment : AggregateRoot
 {
     public int Id { get; set; }
