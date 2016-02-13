@@ -1,6 +1,8 @@
 ---
 title: Strongly identifying with Strongly Typed Id’s
 updated: 2016-01-20 22:16
+keywords: Strongly Typed ID, C#, Static Typing, Strongly Typed ID's
+description: How to strongly type ID's
 ---
 
 ## Refactoring gone wild
