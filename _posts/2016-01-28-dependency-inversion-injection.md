@@ -1,6 +1,8 @@
 ---
 title: What's Dependency Inversion got to do with Dependency Injection
 updated: 2016-01-28 22:10
+keywords: Dependency Inversion, Dependency Inversion Principle, Dependency Injection, Inversion Of Control, S.O.L.I.D, C#
+description: What does Dependency Inversion have to do with Dependency Injection. How does Dependency Inversion relate to Dependency Injection.
 ---
 
 Dependency injection is prevalent throughout many frameworks and libraries these days, and rightly so. The design pattern helps decouple classes, improves testing and reduces high level modules being dependant on lower level modules.

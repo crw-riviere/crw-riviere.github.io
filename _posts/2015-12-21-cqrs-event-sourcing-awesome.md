@@ -1,6 +1,8 @@
 ---
 title: What is CQRS + Event Sourcing and why is it so Awesome
 updated: 2015-12-21 17:34
+keywords: CQRS, Event Sourcing, C#, Awesome, Command Query Responsibility Segregation, CQS
+description: What is CQRS plus Event Sourcing and what makes it Awesome.
 ---
 
 CQRS and Event Sourcing are both design patterns in their own right, although they are often used together to create a highly powerful framework that comes with a wealth of features that can increase performance, responsiveness, scalability and security. We’re going to look at what these design patterns are and how they could forever change the way you look at and think of software architecture!
