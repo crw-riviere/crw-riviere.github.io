@@ -31,7 +31,7 @@ public int GetHouseCountQuery()
 ```
 
 
-CQRS expands on CQS by ensuring that the model that updates data is different to the model that returns the data, in effect having a command model and query model. As opposed to a CRUD application where by the model to update an entity could be the same as the model that is retrieved to view an entity:
+CQRS expands on CQS by segregating the model that updates the data from the model that returns the data, in effect having a command model and query model. As opposed to a CRUD application where by the model to update an entity could be the same as the model that is retrieved to view an entity:
 
 ```cs
 public class HouseModel
