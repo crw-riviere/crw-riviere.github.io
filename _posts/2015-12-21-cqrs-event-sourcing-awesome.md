@@ -105,7 +105,7 @@ HousePriceChangedEvent
 
 
 ```
-HousePriceChangedEvent 
+HouseAgentChangedEvent 
 {
     HouseId : 1
     AgentId : 2  
