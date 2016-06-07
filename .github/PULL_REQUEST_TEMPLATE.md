@@ -1,2 +1,3 @@
 - [x] Date
 - [ ] Author
+- [ ] Tags
